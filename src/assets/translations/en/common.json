@@ -1,0 +1,55 @@
+{
+  "journey": "My Journey",
+  "journey1": " My trajectory has been anything but conventional; It began with a foundation in Mechatronics, the field in which I graduated. My passion for computers and robots grew and my interests in embedded electronics rooted. Through experiments and projects I became capable of building electronic modules and modeling the dynamic behavior of complex systems.",
+  "journey2": "However, as the digital age advanced and my experience broadened, I recognized the need to evolve. This realization led me to further my education in computational modeling and web development. Since then, I have immersed myself in these disciplines, which initially seemed distant from my mechatronics background. Now, I can assert that this strategic move was important as it diversified my skill set, and enabled me for a more comprehensive understanding of the ever-evolving technological landscape.",
+
+  "vision": "My Vision",
+  "vision1": "Having honed my skills in programming and modeling, I am confident in my ability to harness this expertise to foster synergies and deliver impactful contributions within the Information Technology sector. I hold the conviction that any process, when given the right guidance, can be enhanced. I am committed to developing intelligent solutions that refine and elevate your operational processes. Whether you require a data-driven web app, automation for a complex system, or insightful analysis.",
+
+  "introh": "I intend to provide my services to help you out , but what I'm really offering ?",
+  "intro1": "I'm offering custom web application that fit your business needs. There are instances when ready-made software solutions may not meet your unique business needs, or they may be too complicated to handle.",
+  "intro2": "My development process begin by pinpointing the prerequisites for your software and designing a custom solution that fulfills those requirements. That procedure involves working closely with you to comprehend your business necessities and goals, as it encompasses the recognizing of the issue I'm going to address, outlining immediate and long-term objectives and setting priorities.",
+
+  "qualityh": "What about quality and assurance ?",
+
+  "tools": "Tools",
+  "tools1": "I have extensive knowledge of Python and its wide range of libraries, which I have used to handle data and build backend services. When I need to develop a secure and scalable API, I use the Django framework, coupled with the DRF library.",
+  "tools2": "Django is a high-level Python web framework optimized for performance and security, which implies that your software can handle substantial traffic loads and is less vulnerable to security risks. It is also exceedingly scalable, meaning that as your business grows, your software application can grow with it.",
+  "tools3": "With TypeScript and the React framework, I can bring a great user interface and experience to the frontend application. This stack is my choice when building a mature and robust Infrastructure as a Service",
+
+  "devops": "DevOps",
+  "devops1": "I have a strong focus on AWS to ensure that your software runs smoothly and seamlessly in a secure manner. I use Ubuntu (popular Linux distribution) as the OS environment for hosting applications, Docker (containerization technology) to ensure consistent and isolated environments for application deployment, and GitHub to facilitate version control and continuous integration.",
+
+  "testing": "Testing",
+  "testing1": "Delivering quality software is part of my mission, and I take that very seriously. Consequently, that’s why I allocate time to conduct both manual and automated testing. This ensures that my code is reliable and performs as expected.",
+
+  "AIheader": "AI Integrations",
+
+  "aiIntro": "I can help integrate modern Artificial Intelligence into your business!",
+  "aiIntro1": "Advancements in the field of generative AI are leading to significant changes. Companies are exploring ways to utilize and incorporate these modern generative AI tools to effectively assist in their daily operations. If you need assistance in evaluating and integrating AI into your business, I’m here to help.",
+
+  "how": "How ?",
+  "how1": "The OpenAI API is a developer platform that provides access to powerful machine learning models developed by OpenAI. It offers a general-purpose API that can be used to build applications with natural language capabilities, similar to ChatGPT.",
+  "how2": "Using a technique called RAG, I’m able to optimize the output of OpenAI’s Large Language Model (LLM) by referencing a new knowledge base outside of its training data sources, before generating a response. This means that I will use an external source of data to supplement the LLM, and the context of that data will, of course, be related to your business.",
+
+  "method": "Method",
+  "method1": "To store and provide data to the LLM, I will need to use a special type of database known as a vector database or vector store (e.g.,Pinecone or Chroma DB). I will pre-process your data and then split it into a defined number of chunks, each of which will be transformed into a vectorized form (a list of numbers) and stored in the database’s vector space. Every time a query is made to the LLM, this query will also be vectorized and an algorithm will be used to find the vectors that are most semantically related to that query vector. The final payload that is sent to the LLM will be your query, alongside the chunks of data that have the highest probability of containing the relevant information.",
+  "method2": "Most of the heavy lifting to set up the infrastructure is done with help of a Python library called LangChain. It is the framework tha I use to building, testing, and monitoring LLM applications.",
+  "method3": "This overall approach is beneficial and reliable as it ensures that the model has access to authoritative knowledge. With it, I can develop AI services, such as chatbots with custom LLMs, that can run asynchronously alongside your Django application.",
+
+  "otherServices": "Other services",
+
+  "electronicIOT": "Electronics and IoT devices",
+  "electronicIOTxt": "I possess a solid understanding of electronics and IoT devices, and I’m skilled in creating custom firmware for Raspberry and Espressif microcontroller boards. I have the ability to set up sensor modules, gateways, and closed-loop controllers using these boards. If there’s a process you’re looking to automate, I’m capable of assisting you with it.",
+
+  "technicalDiligence": "Technical Due Diligence",
+  "technicalDiligenceTxt": "Are you in need of a professional perspective on a current project or a technological device? By persistent effort to learn and understand complex concepts, technologies and systems, I can assist you in managing your technology.",
+  "support": "Support",
+  "supportTxt": "Once the active development phase is completed, I can offer ongoing maintenance and support services to ensure that your software application remains up-to-date and continues to meet your business requirements.",
+
+  "contactmeTxt" : "I am eager to engage in freelance opportunities, particularly those that are ambitious or large-scale. However, I am also open to considering permanent job positions. If you have a request or question, don't hesitate to contact me.",
+  "meetme" : "Guess what? I’m live right next to paradise! Swing by for a chat over some refreshing coconut water or a warm cup of coffee... It’ll be a blast!"
+}
+
+
+

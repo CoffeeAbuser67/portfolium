@@ -1,0 +1,183 @@
+import { useSpring, useSprings, animated , useSpringRef, useSpringValue} from 'react-spring';
+import { useEffect } from 'react';
+import {useLogo} from './context/LogoContext'
+import {useAnimation} from '../../contexts/AnimationContext';
+
+const colors = ['#F47841', '#DD3E35', '#B43243']
+const offset = ['0','0.433','1'] 
+
+
+const Sun = () => {
+  
+  const { ready, setReady, coloring } = useLogo()
+  const {loaded} = useAnimation()
+
+  const enterApi = useSpringRef()
+  const moveApi = useSpringRef()
+  const shakeApi = useSpringRef()
+  const colorApi = useSpringRef()
+
+
+  const {enter} = useSpring({
+    ref: enterApi,
+    from: {enter : 0},
+    to: {enter: 1},
+    config: {duration: 1000},
+  })
+
+
+  const {skew} = useSpring({
+    ref: enterApi,
+    from: {skew : 0},
+    to: {skew: 1},
+    config: {duration: 1000},
+    delay: 1200,
+  })
+
+
+  const {move} = useSpring({
+    ref: moveApi,
+    from: {move : 0},
+    to: {move: 1},
+    config: {      
+      mass: 15,
+      friction: 40,
+      tension: 35,
+    },
+    delay: 1900,
+    onResolve: () => {
+      setReady(true)
+    }
+  })
+
+
+
+  const {shake} = useSpring({
+    ref: shakeApi,
+    from: { shake: 0},
+    to: {shake:1},
+    config: { duration: 1200 },
+  })
+
+
+
+
+  const {grow} = useSpring({
+    ref: moveApi,
+    from: {grow : 0},
+    to: {grow: 1},
+    config: {duration: 1500},
+    delay: 2000,
+  })
+
+
+
+  const [colorSpring] = useSprings(colors.length, i => ({    
+    ref: colorApi,
+    from: {
+      c : "black",
+      o : '0', 
+    },
+    to:{
+      c : colors[i],
+      o : offset[i]
+    },
+    delay: 2000,
+    config: {
+      friction: 120,
+      tension: 30,
+    }
+
+  }));
+
+  // useEffect(() => {
+  //   enterApi.start()
+  //   moveApi.start()
+  // }, []) 
+
+  if (loaded){
+    enterApi.start()
+    moveApi.start()
+  }
+  if(ready){shakeApi.start()} 
+  if (coloring){colorApi.start()}
+
+
+  return (
+    <>
+      <linearGradient
+        id="colored_sun"
+        x1={299.273}
+        x2={300.662}
+        y1={350.811}
+        y2={250.602}
+        gradientUnits="userSpaceOnUse"
+      >
+        
+        {colorSpring.map(({c, o}, i ) => (
+          <animated.stop offset={o} stopColor = {c} key = {`csun_${i}`}/>
+        ))}
+
+      </linearGradient>
+
+      <animated.g
+        style={{
+          transformOrigin: 'center', 
+          transformBox: 'fill-box',
+          scale: shake.to({
+            range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],
+            output: [1, 0.97, 0.9, 1.1, 0.9, 1.1, 1.03, 1],
+          }),
+        }}
+      >
+        <animated.g
+          style = {{
+            transformOrigin: "756px 25.3px 0px", 
+            transform: move.to({
+              range: [0,  0.6,  1],
+              output: [0,  -60, -106.2],
+            }).to(value => `rotate(${value}deg`)
+          }}
+        >
+          <animated.g
+            style = {{
+              transformOrigin: 'center', 
+              transformBox: 'fill-box',
+              transform: skew.to({
+                range: [0,  0.75,  0.85,  1],
+                output: [0,  35, -22, 0],
+              }).to(value => `skew(${value}deg`)
+            }}
+          >
+            <animated.circle 
+              cx={632}
+              cy={-475}
+              r={grow.to({
+                range: [0, 0.6, 1],
+                output: [15,  25, 76],
+              })}
+              fill = {"url(#colored_sun)"}
+              style = {{
+                transformOrigin: 'center', 
+                transformBox: 'fill-box',
+                transform: enter.to({
+                  range: [0,  0.2,  0.4,  0.6, 0.8, 1],
+                  output: [0.3, 1.25, 0.81, 1.1, 0.87, 1],
+                }).to( value  => `scale3d(${value}, ${value}, 1)`)
+              }}
+            />
+          </animated.g>
+        </animated.g>
+      </animated.g>
+
+    </>
+  );
+};
+
+export default Sun
+
+
+
+
+
+

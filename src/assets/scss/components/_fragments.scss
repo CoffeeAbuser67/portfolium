@@ -1,0 +1,26 @@
+
+
+.openFragment{
+  width : 4.5vw;
+  height: 3.5vw;
+}
+
+.closeFragment{
+  width : 6vw;
+  height: 5vw;
+}
+
+@media only screen and (min-width: 900px) {
+
+  .openFragment{
+    width : 2vw;
+    height: 1.5vw;
+  }
+  
+  .closeFragment{
+    width : 2.5vw;
+    height: 2vw;
+  }
+
+
+}

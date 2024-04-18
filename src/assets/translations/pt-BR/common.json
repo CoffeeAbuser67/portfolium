@@ -1,0 +1,60 @@
+{
+
+
+  "journey" : "Jornada",
+  "journey1": "Minha trajetória tem sido tudo menos convencional; Começou com uma base em Mecatrônica, campo no qual me formei. Minha paixão por computadores e robôs cresceu e meus interesses em eletrônica embarcada se enraizaram. Através de experimentos e projetos, tornei-me capaz de construir módulos eletrônicos e modelar o comportamento dinâmico de sistemas complexos.",
+  "journey2": "No entanto, à medida que a era digital avançava e minha experiência se ampliava, reconheci a necessidade de evoluir. Essa percepção me levou a aprofundar minha educação em modelagem computacional e desenvolvimento web. Desde então, mergulhei nessas disciplinas, que inicialmente pareciam distantes do meu background em mecatrônica. Hoje, posso afirmar com convicção que esta mudança estratégica foi crucial. Ela não apenas diversificou meu conjunto de habilidades, mas também me equipou com uma compreensão mais ampla do cenário tecnológico em constante transformação.",
+  
+  
+  "vision" : "Visão",
+  "vision1" : "Tendo aprimorado minhas habilidades em programação e modelagem, estou confiante na minha capacidade de utilizar essa expertise para promover sinergias e fazer contribuições significativas no setor de Tecnologia da Informação. Acredito que com a orientação adequada qualquer processo pode ser melhorado. Estou comprometido em desenvolver soluções inteligentes que aprimorem e elevem seus processos operacionais. Seja um aplicativo web orientado a dados, automação para um sistema complexo ou uma análise perspicaz, estou pronto para ajudar.",
+
+  "introh" :"Pretendo oferecer meus serviços para ajudá-lo, mas o que realmente estou oferecendo?",
+  "intro1" :"Estou oferecendo um aplicativo web personalizado, projetado para satisfazer as demandas específicas do seu negócio. Há situações em que as soluções de software disponíveis no mercado podem não atender totalmente às suas necessidades, ou podem ser excessivamente complicadas de lidar.",
+  "intro2" : "Meu processo de desenvolvimento começa identificando os pré-requisitos para o seu software e projetando uma solução personalizada que atenda a esses requisitos. Este procedimento requer uma colaboração estreita com você, permitindo-me compreender as suas necessidades e metas de negócio. Além disso, inclui a identificação do problema que será abordado, a definição de objetivos a curto e longo prazo, e o estabelecimento de prioridades.",
+
+  "qualityh" : "Qualidade e Segurança",
+
+  "tools" : "Ferramentas",
+  "tools1" : "Possuo um conhecimento profundo de Python e de sua vasta coleção de bibliotecas, as quais tenho utilizado para manipular dados e construir serviços de backend. Quando a necessidade é desenvolver uma API segura e escalável, recorro ao framework Django, em conjunto com a biblioteca DRF.",
+
+  "tools2" : "Django é um framework web de alto nível, escrito em Python, otimizado para desempenho e segurança. Isso significa que o software desenvolvido é capaz de lidar com volumes significativos de tráfego e apresenta menor vulnerabilidade a riscos de segurança. Além disso, é extremamente escalável, permitindo que, à medida que seu negócio se expande, a aplicação possa acompanhar esse crescimento.",
+  "tools3" : "Utilizando TypeScript e o framework React, sou capaz de proporcionar uma interface de usuário excepcional e uma experiência agradável para o aplicativo de frontend. Essa combinação é a minha escolha preferida ao construir uma Infraestrutura Web robusta e madura.",
+
+  "devops" : "DevOps",
+  "devops1" : "Possuo uma ênfase significativa em AWS, visando assegurar que o seu software opere de maneira fluida, contínua e segura. Utilizo o Ubuntu, uma distribuição Linux amplamente reconhecida, como o ambiente do sistema operacional para hospedagem de aplicativos. Recorro ao Docker, uma tecnologia de contêineres, para garantir ambientes de implantação de aplicativos consistentes e isolados. Além disso, utilizo o GitHub para facilitar o controle de versões e a integração contínua.",
+
+  "testing" : "Testes",
+  "testing1" : "Entregar software de qualidade faz parte da minha missão, e levo isso muito a sério. Consequentemente, é por isso que reservo tempo para realizar testes manuais e automatizados. Isso garante que meu código seja confiável e funcione conforme o esperado.",
+
+  "AIheader": "Inteligência Artificial",
+
+  "aiIntro" : "Posso ajudar a integrar Inteligência Artificial (IA) ao seu negócio!",
+  "aiIntro1" : " Os progressos na área da IA generativa estão promovendo transformações expressivas. Empresas estão explorando maneiras de utilizar e incorporar essas modernas ferramentas de IA para auxiliar efetivamente em suas operações diárias. Se você necessita de assistência para avaliar e integrar IA ao seu negócio, estou aqui para ajudar.",
+
+  "how" : "Como ?", 
+  "how1" : "OpenAI API é uma plataforma de desenvolvimento que oferece acesso a modelos de aprendizado de máquina poderosos desenvolvidos pela OpenAI. Ela oferece uma API de propósito geral que pode ser usada para construir aplicações com capacidades de linguagem natural, semelhantes ao ChatGPT.", 
+  "how2" : "Usando uma técnica chamada RAG, consigo otimizar a saída do Large Language Model (LLM) da OpenAI, referenciando uma nova base de conhecimento fora de suas fontes de dados de treinamento, antes de gerar uma resposta. Isso significa que usarei uma fonte externa de dados para complementar o Modelo de Linguagem, e o contexto desses dados estará, é claro, relacionado ao seu negócio.", 
+
+  "method" : "Metodologia",
+  "method1" : "Para armazenar e fornecer dados ao LLM, precisarei usar um tipo especial de banco de dados conhecido como vector database  ou vector store (por exemplo, Pinecone ou Chroma DB). Pré-processarei seus dados e, em seguida, dividirei-os em um número definido de partes, cada uma das quais será transformada em uma forma vetorizada (uma lista de números) e armazenada no espaço vetorial do banco de dados. Toda vez que uma consulta é feita ao LLM, essa consulta também será vetorizada e um algoritmo será usado para encontrar os vetores que estão mais semanticamente relacionados a esse vetor de consulta. A carga final que é enviada ao LLM será sua consulta, juntamente com as partes dos dados que têm a maior probabilidade de conter as informações relevantes.",
+  "method2" : "A maior parte do trabalho pesado para configurar a infraestrutura é feita com a ajuda de uma biblioteca Python chamada LangChain. É o framework que eu uso para construir, testar e monitorar aplicações com LLM.",
+  "method3" : "Esta abordagem geral é benéfica e confiável, pois garante que o modelo tenha acesso a conhecimento autoritativo.  Com base nisso, sou capaz de desenvolver serviços de Inteligência Artificial, como chatbots com LLMs personalizados, que podem operar de maneira assíncrona em conjunto com o seu aplicativo Django.",
+
+  "otherServices": "Outros serviços ",
+
+  "electronicIOT": "Eletrônicos e dispositivos IoT",
+  "electronicIOTxt": "Eu possuo um sólido entendimento de eletrônicos e dispositivos IoT, e sou habilidoso em criar firmware personalizado para placas de microcontroladores Raspberry e Espressif. Tenho a capacidade de configurar módulos de sensores, gateways e controladores de malha fechada usando essas placas. Se há um processo que você está procurando automatizar, estou apto a auxiliá-lo nessa tarefa.",
+
+  "technicalDiligence": "Técnica por Diligência",
+  "technicalDiligenceTxt": "Você precisa de uma perspectiva profissional sobre um projeto atual ou um dispositivo tecnológico? Por meio de um esforço persistente para aprender e entender conceitos, tecnologias e sistemas complexos, posso ajudá-lo a gerenciar sua tecnologia.",
+  "support": "Suporte",
+  "supportTxt": "Uma vez concluída a fase de desenvolvimento ativo, posso oferecer serviços contínuos de manutenção e suporte para garantir que seu software permaneça atualizado e continue atendendo às necessidades do seu negócio.",
+
+  "contactmeTxt" : "Estou ansioso para participar de oportunidades como freelancer, particularmente aquelas que são ambiciosas ou de grande escala. No entanto, também estou aberto a considerar posições de emprego permanentes. Se você tiver um pedido ou uma pergunta, não hesite em me contatar.",
+  "meetme" : "Adivinha? Eu moro bem ao lado do paraíso! Passe para bater um papo com uma refrescante água de coco ou uma xícara quente de café… Vai ser incrível!"
+
+
+
+
+}
