@@ -4,6 +4,12 @@
   flex-direction: column;
   align-content: center;
   gap: 10vw;
+  -webkit-tap-highlight-color: transparent;
+
+  a{
+    text-decoration: none;
+    display: flex;
+  }
 
   .article {
     position: relative;
@@ -37,6 +43,7 @@
         calc(var(--_i, -1) * -0.08em) 0.01em 2px rgba(255, 0, 0, 0.1);
       outline-offset: 0.1em;
       transition: 0.3s;
+      -webkit-tap-highlight-color: transparent;
     }
 
     .contact_button:hover {

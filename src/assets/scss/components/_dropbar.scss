@@ -8,6 +8,7 @@
   box-sizing: content-box;
   border-radius: 12px;
   margin-top: 80px;
+  -webkit-tap-highlight-color: transparent;
 
   .dock-card {
 
@@ -25,7 +26,6 @@
     cursor: pointer;
     width: 48px;
     height: 48px;
-
 
     &:hover {
       filter: saturate(1) brightness(1.12);

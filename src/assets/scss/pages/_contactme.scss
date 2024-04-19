@@ -2,7 +2,8 @@
   display: flex;
   flex: 1;
   justify-content: center;
-
+  -webkit-tap-highlight-color: transparent;
+  
   p {
     text-align: justify;
     font-family: "Noto Sans Mono", monospace;
