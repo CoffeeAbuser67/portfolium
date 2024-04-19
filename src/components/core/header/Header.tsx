@@ -77,7 +77,7 @@ export default function Header() {
   const buttonRef = useRef<HTMLDivElement>(null);
 
   const menuAppear = useSpring({
-    transform: isOpen ? "translateY(17)" : "translateY(-50%)",
+    transform: isOpen ? "translateY(17)" : "translateY(-80%)",
     opacity: isOpen ? 1 : 0,
   });
 
